@@ -23,6 +23,28 @@ Useful campus updates can get lost across group chats and social media. TU Watch
 
 Posts and comments persist in the same browser through `localStorage`. Support counts are demonstration state and reset when the detail page is reloaded. Profile settings are local preferences; the prototype has no user accounts.
 
+## Screenshots
+
+Screenshots captured from the running web prototype at a 440 × 956 viewport. Local copies of the intended fonts were loaded for capture. These show the implemented screens, rather than generated concept artwork.
+
+| Campus Map | Campus Feed |
+| --- | --- |
+| ![Campus Map](docs/screenshots/campus-map.png) | ![Campus Feed](docs/screenshots/feed.png) |
+
+| Post Submitted | Post Details |
+| --- | --- |
+| ![Feed with submission confirmation](docs/screenshots/feed-submitted.png) | ![Post details](docs/screenshots/post-detail.png) |
+
+| Create a Post | Notifications |
+| --- | --- |
+| ![Create a Post form](docs/screenshots/report.png) | ![Notifications](docs/screenshots/alerts.png) |
+
+| Profile |
+| --- |
+| <img src="docs/screenshots/profile.png" alt="Profile" width="320"> |
+
+Scrollable screens may include additional content below the visible area.
+
 ## Tech Stack
 
 - **Next.js 15** — application routing and rendering
@@ -108,7 +130,7 @@ npm run build
 npm run start
 ```
 
-The implementation passed a production build, including TypeScript validation. Local HTTP checks returned **200** for all six main routes and selected visual assets. Full browser interaction and visual comparison against Figma have not yet been completed.
+The implementation passed a production build, including TypeScript validation. Local HTTP checks returned **200** for all six main routes and selected visual assets. Browser checks also passed for creating a post, opening its details, adding a comment, and retaining the comment after reload, with no JavaScript page errors observed. Screenshots were captured for all seven screen states. Full interaction coverage and visual comparison against Figma have not yet been completed.
 
 ## Current Limitations
 
