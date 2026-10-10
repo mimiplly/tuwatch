@@ -1,0 +1,12 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Tree" clip-path="url(#clip0_0_20)">
+<circle id="Tree highlight" cx="4.5" cy="4.5" r="2.5" fill="#D6E9CC"/>
+<circle id="Tree canopy" cx="6" cy="6" r="6" fill="#C5DFC0"/>
+<circle id="Tree shadow" cx="9" cy="9" r="7" fill="#B3CCAE" fill-opacity="0.4"/>
+</g>
+<defs>
+<clipPath id="clip0_0_20">
+<rect width="14" height="14" fill="white"/>
+</clipPath>
+</defs>
+</svg>

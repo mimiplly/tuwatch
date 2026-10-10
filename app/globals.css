@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap");
+
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; }
+body { background: #eef3f8; color: #172b4d; font-family: Inter, "Noto Sans Thai", Arial, sans-serif; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+a { color: inherit; text-decoration: none; }
+.screen-outer { position: relative; margin: 0 auto; }
+.home-screen { position: relative; width: 440px; height: 956px; overflow: hidden; background: #fff; transform-origin: top left; }
+.discovery-gradient { position: absolute; inset: 0 0 auto; height: 204px; background: linear-gradient(155.13deg, rgba(148,209,255,.12) 14.65%, rgba(255,255,255,.05) 51.41%, rgba(178,229,194,.1) 85.36%); }
+.status-bar { position: absolute; left: 28px; right: 28px; top: 0; height: 42px; display: flex; align-items: center; justify-content: space-between; font-size: 15px; font-weight: 600; }
+.status-icons { display: flex; gap: 5px; align-items: center; }
+.status-icons img { display: block; width: 18px; height: 18px; }
+.status-icons .battery { width: 26px; }
+.campus-header { position: absolute; top: 52px; left: 20px; right: 20px; height: 38px; display: flex; align-items: center; justify-content: space-between; }
+.brand { display: flex; align-items: center; white-space: pre; font-size: 25px; line-height: 1; font-weight: 600; letter-spacing: -.5px; }
+.brand strong { color: #2f80ed; font-weight: 800; }
+.brand img { width: 5px; height: 5px; margin: 14px 0 0 1px; }
+.header-actions { display: flex; gap: 10px; }
+.header-icon { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; }
+.header-icon img { width: 20px; height: 20px; }
+.notifications { background: rgba(255,255,255,.7); }
+.profile { background: #d7e9ff; border: 2px solid #fff; }
+.profile img { width: 19px; height: 19px; }
+.search-bar { position: absolute; top: 100px; left: 20px; right: 15px; height: 52px; display: flex; align-items: center; gap: 9px; padding: 0 14px; border: 1px solid rgba(255,255,255,.91); border-radius: 18px; background: rgba(255,255,255,.86); box-shadow: 0 2px 6px rgba(37,73,106,.05), 0 6px 20px rgba(0,0,0,.2); }
+.search-bar > img { width: 18px; height: 18px; }
+.search-bar input { min-width: 0; flex: 1; border: 0; outline: 0; background: transparent; color: #172b4d; font: 400 11.5px "Noto Sans Thai", Inter, sans-serif; }
+.search-bar input::placeholder { color: #71829b; opacity: 1; }
+.search-bar input::-webkit-search-cancel-button { display: none; }
+.search-divider { width: 1px; height: 20px; background: #dce6f1; }
+.search-bar button { padding: 0; border: 0; background: none; width: 18px; height: 18px; }
+.search-bar button img { display: block; width: 18px; height: 18px; }
+.category-scroll { position: absolute; top: 162px; left: 20px; right: 0; overflow-x: auto; overflow-y: hidden; scrollbar-width: none; filter: drop-shadow(0 2px 3px rgba(0,0,0,.05)) drop-shadow(0 6px 10px rgba(0,0,0,.1)); z-index: 5; }
+.category-scroll::-webkit-scrollbar { display: none; }
+.category-row { display: flex; gap: 7px; width: max-content; padding-right: 16px; }
+.category-chip { height: 32px; display: flex; align-items: center; gap: 6px; padding: 0 12px; border: 1px solid white; border-radius: 100px; background: rgba(255,255,255,.77); color: #172b4d; font: 500 12px "Noto Sans Thai", Inter, sans-serif; white-space: nowrap; box-shadow: 0 2px 6px rgba(37,73,106,.05), 0 6px 20px rgba(37,73,106,.1); }
+.category-chip img { width: 5px; height: 5px; }
+.category-chip.active { background: #2f80ed; border-color: #2f80ed; color: white; font-weight: 600; }
+.campus-map { position: absolute; top: 204px; left: 0; width: 440px; height: 626px; background: #fff; }
+.campus-label { position: absolute; top: 15px; left: 20px; display: flex; flex-direction: column; gap: 1px; z-index: 2; white-space: nowrap; }
+.campus-label strong { font: 600 12px "Noto Sans Thai", sans-serif; }
+.campus-label small { color: #82958d; font: 400 9px Inter, sans-serif; }
+.locate-button { position: absolute; top: 6px; left: 383px; width: 44px; height: 44px; display: grid; place-items: center; z-index: 3; border: 1px solid rgba(255,255,255,.91); border-radius: 16px; background: rgba(255,255,255,.86); backdrop-filter: blur(9px); box-shadow: 0 6px 24px rgba(37,73,106,.2); }
+.locate-button img { width: 21px; height: 21px; }
+.map-art { position: absolute; top: 30px; left: 0; width: 440px; height: 722px; }
+.land { position: absolute; transform: rotate(-13deg); }
+.park { left: 23px; top: 53px; width: 110px; height: 322px; border-radius: 46px; background: #dcecdd; }
+.courtyard { left: 219px; top: 50px; width: 90px; height: 148px; border-radius: 28px; background: #d9e9d4; }
+.sports { left: 121px; top: 249px; width: 81px; height: 94px; border-radius: 18px; background: #dae9cf; }
+.lake { left: 302px; top: 262px; width: 100px; height: 119px; border-radius: 45px; background: #bbdded; transform: rotate(-18deg); }
+.lake span, .lake i { position: absolute; display: block; border-radius: 3px; background: #dceef3; }
+.lake span { left: 14px; top: 33px; width: 62px; height: 5px; }
+.lake i { left: 30px; top: 56px; width: 43px; height: 4px; }
+.road { position: absolute; width: 258.573px; height: 424.462px; left: 84.1px; top: 13.5px; }
+.road-network { z-index: 1; }
+.road-markings { position: absolute; left: 124.1px; top: 202.7px; width: 218.55px; height: 235.24px; z-index: 1; }
+.map-tree { position: absolute; width: 14px; height: 14px; z-index: 2; }
+.map-building { position: absolute; transform: rotate(-13deg); z-index: 2; }
+.building-shadow, .building-roof, .building-ridge { position: absolute; display: block; }
+.building-shadow { inset: 3px -2px -3px 2px; border-radius: 5px; background: rgba(189,204,188,.36); }
+.building-roof { inset: 0; border: 1px solid #d7d2c8; border-radius: 5px; background: #f5f0e9; }
+.building-ridge { left: 6px; right: 6px; top: 45%; height: 4px; border-radius: 2px; background: #e4ddd2; }
+.building-label { position: absolute; top: calc(100% + 4px); left: 50%; transform: translateX(-50%); color: #657e73; font: 600 10px "Noto Sans Thai", sans-serif; white-space: nowrap; }
+.dome-landmark { position: absolute; z-index: 3; left: 153px; top: 68px; width: 20px; height: 40px; transform: rotate(-13deg); }
+.map-text { position: absolute; z-index: 2; transform: rotate(-13deg); white-space: nowrap; font-family: "Noto Sans Thai", sans-serif; font-weight: 400; }
+.activities-label { left: 112px; top: 324px; font-size: 9px; color: #82958d; }
+.lake-label { left: 297px; top: 347px; font-size: 9px; color: #7ba5b5; }
+.road-label { left: 18px; top: 221px; font-size: 8px; color: #94a89b; }
+.incident-marker { position: absolute; z-index: 4; width: 44px; height: 52px; padding: 0; border: 0; background: transparent; }
+.marker-badge { position: absolute; top: 0; left: 0; display: grid; place-items: center; width: 42px; height: 42px; border: 3px solid white; border-radius: 16px; box-shadow: 0 4px 10px rgba(37,73,106,.15); }
+.marker-badge img { width: 20px; height: 20px; }
+.marker-tip { position: absolute; left: 15px; top: 32px; width: 14px; height: 15px; }
+.marker-halo { position: absolute; left: -10px; top: 25px; width: 64px; height: 25px; }
+.location-accuracy { position: absolute; z-index: 3; left: 188px; top: 328px; width: 50px; height: 50px; }
+.current-location { position: absolute; z-index: 4; left: 194px; top: 338px; width: 38px; height: 38px; }
+.incident-card { position: absolute; z-index: 6; top: 486px; left: 12px; width: 408px; height: 106px; display: flex; align-items: center; gap: 12px; padding: 8px 14px; border: 1.5px solid rgba(255,255,255,.91); border-radius: 24px; background: rgba(255,255,255,.86); backdrop-filter: blur(9px); box-shadow: 0 6px 24px rgba(37,73,106,.07); }
+.incident-photo { flex: none; width: 76px; height: 88px; border-radius: 16px; object-fit: cover; }
+.incident-details { flex: 1; min-width: 0; height: 60px; position: relative; font-family: "Noto Sans Thai", sans-serif; }
+.incident-meta { display: flex; align-items: center; gap: 7px; height: 15px; color: #71829b; font-size: 10px; white-space: nowrap; }
+.incident-meta img { width: 5px; height: 5px; }
+.incident-meta .problem-label { color: #d78a38; font-weight: 600; }
+.incident-details h2 { margin: 3px 0 4px; font-size: 14px; line-height: 1.45; font-weight: 600; white-space: nowrap; }
+.incident-location { display: flex; align-items: center; gap: 4px; color: #71829b; font-size: 10px; white-space: nowrap; }
+.incident-location img { width: 12px; height: 12px; }
+.open-report { flex: none; display: grid; place-items: center; width: 28px; height: 28px; margin-left: auto; padding: 0; border: 0; border-radius: 50%; background: #eaf4ff; }
+.open-report img { width: 17px; height: 17px; }
+.bottom-navigation { position: absolute; z-index: 10; left: 0; top: 830px; width: 440px; height: 126px; }
+.tab-bar { position: absolute; left: 16px; top: 22px; width: 408px; height: 78px; display: flex; justify-content: space-between; align-items: center; padding: 0 10px; border: 1.5px solid rgba(255,255,255,.91); border-radius: 28px; background: rgba(255,255,255,.79); backdrop-filter: blur(9px); box-shadow: 0 6px 24px rgba(0,0,0,.2); }
+.nav-item, .nav-camera-space { width: 70px; height: 62px; flex: none; }
+.nav-item { position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 5px; color: #71829b; font: 500 10px Inter, sans-serif; }
+.nav-item img { width: 22px; height: 22px; }
+.nav-item.selected { color: #2f80ed; font-weight: 700; }
+.nav-item.selected::after { content: ""; position: absolute; left: 25px; top: 58px; width: 20px; height: 3px; border-radius: 2px; background: #2f80ed; }
+.camera-button { position: absolute; left: 180px; top: 11px; width: 80px; height: 80px; display: grid; place-items: center; border: 5px solid #2f80ed; border-radius: 28px; background: #2f80ed; box-shadow: 0 6px 16px rgba(0,0,0,.5); }
+.camera-button img { width: 40px; height: 40px; }
+.home-indicator { position: absolute; left: 154px; top: 113px; width: 132px; height: 5px; border-radius: 100px; background: #172b4d; }
