@@ -1,3 +1,4 @@
+import Link from "next/link";
 const asset = "/assets/tuwatch/";
 
 export default function IncidentCard() {
@@ -9,7 +10,7 @@ export default function IncidentCard() {
         <h2>เจอทางเท้าชำรุดหน้าตึก SC3</h2>
         <div className="incident-location"><img src={asset + "f98a1.svg"} alt="" /><span>หน้าตึก SC3 · ห่าง 120 ม.</span></div>
       </div>
-      <button className="open-report" type="button" aria-label="Open report"><img src={asset + "8abe2.svg"} alt="" /></button>
+      <Link className="open-report" href="/posts/sidewalk" aria-label="Open report"><img src={asset + "8abe2.svg"} alt="" /></Link>
     </article>
   );
 }
